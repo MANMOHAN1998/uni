@@ -67,7 +67,7 @@
     ======================================= -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="/" style="width:30%">
                 <img src="{% static 'images/brand-logo.png' %}" alt="Brand Logo" class="img-fluid">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -153,33 +153,41 @@
             />
         </svg>
 
+<style>
+    .bi-twitter-x:hover {
+        fill: white !important;
+    }
+</style>
+
         <div class="footer-nav-wrapper">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
-                        <a href="index.html" class="footer-logo">
-                            <img src="images/footer-logo.png" alt="footer logo">
+                    <div class="col-md-4">
+                        <a href="/" class="footer-logo">
+                            <img src="{% static 'images/footer-logo.png' %}" alt="footer logo">
                         </a>
 
                         <ul class="social-icons">
                             <li>
-                                <a href="http://www.behance.net/" target="_blank" rel="noopener">
-                                    <i class="fab fa-behance"></i>
+                                <a href="http://www.facebook.net/" target="_blank" rel="noopener">
+                                    <i class="fab fa-facebook"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="http://twitter.com/" target="_blank" rel="noopener">
-                                    <i class="fab fa-twitter"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#000" class="bi bi-twitter-x mb-2" viewBox="0 0 16 16">
+                                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"></path>
+                                    </svg>
                                 </a>
                             </li>
                             <li>
-                                <a href="http://plus.google.com/discover" target="_blank" rel="noopener">
-                                    <i class="fab fa-google-plus-g"></i>
+                                <a href="http://www.instagram.com/discover" target="_blank" rel="noopener">
+                                    <i class="fab fa-instagram"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="http://dribbble.com/" target="_blank" rel="noopener">
-                                    <i class="fab fa-dribbble"></i>
+                                <a href="http://snapchat.com/" target="_blank" rel="noopener">
+                                    <i class="fab fa-snapchat"></i>
                                 </a>
                             </li>
                             <li>
@@ -192,34 +200,34 @@
                     </div>
                     <!-- End of .col-md-3 -->
 
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <nav class="footer-nav">
                             <h5>Services</h5>
                             <ul class="footer-menu">
                                 <li>
-                                    <a href="logo-and-branding.html">Logo &amp; Branding</a>
+                                    <a href="logo-and-branding.html">QA Services</a>
                                 </li>
                                 <li>
-                                    <a href="pay-per-click.html">Pay-Per-Click</a>
+                                    <a href="pay-per-click.html">Website Development</a>
                                 </li>
                                 <li>
-                                    <a href="website-design.html">Website Design</a>
+                                    <a href="website-design.html">Publishing and Conversion Services</a>
                                 </li>
                                 <li>
-                                    <a href="mobile-app-development.html">Mobile App Design</a>
+                                    <a href="mobile-app-development.html">Timecodes Generation, Translation</a>
                                 </li>
                                 <li>
                                     <a href="search-engine-optimization.html">Search Engine Optimization </a>
                                 </li>
                                 <li>
-                                    <a href="social-media-marketing.html">Social Media Marketing</a>
+                                    <a href="social-media-marketing.html">Recruitment Process</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
                     <!-- End of .col-md-3 -->
 
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <nav class="footer-nav">
                             <h5>Support</h5>
                             <ul class="footer-menu">
@@ -237,28 +245,28 @@
                     </div>
                     <!-- End of .col-md-3 -->
 
-                    <div class="col-md-3">
+                    {% comment %} <div class="col-md-3">
                         <nav class="footer-nav">
                             <h5>Resources</h5>
-                            <ul class="footer-menu">
-                                <li>
+                            <ul class="footer-menu"> {% endcomment %}
+                                {% comment %} <li>
                                     <a href="portfolio.html">Portfolio</a>
                                 </li>
                                 <li>
                                     <a href="case-studies.html">Case Studies</a>
-                                </li>
-                                <li>
+                                </li> {% endcomment %}
+                                {% comment %} <li>
                                     <a href="about-us.html">About</a>
-                                </li>
-                                <li>
+                                </li> {% endcomment %}
+                                {% comment %} <li>
                                     <a href="team.html">Team</a>
                                 </li>
                                 <li>
                                     <a href="blog.html">Blog</a>
-                                </li>
-                            </ul>
+                                </li> {% endcomment %}
+                            {% comment %} </ul>
                         </nav>
-                    </div>
+                    </div> {% endcomment %}
                     <!-- End of .col-md-3 -->
                 </div>
                 <!-- End of .row -->
@@ -269,8 +277,8 @@
 
         <div class="footer-bottom">
             <div class="container">
-                <p class="text-center">&copy; 2022. All rights reserved by Your
-                    <a href="http://axilweb.com/" target="_blank">Company LLC</a>.</p>
+                <p class="text-center">&copy; 2022. All rights reserved by UNI
+                    <a href="http://axilweb.com/" target="_blank">Manmohan Singh</a>.</p>
             </div>
             <!-- End of .container -->
         </div>
@@ -457,7 +465,7 @@
                                             <ul class="social-icons">
                                                 <li>
                                                     <a href="http://www.behance.net/" target="_blank" rel="noopener">
-                                                        <i class="fab fa-behance"></i>
+                                                        <i class="fab fa-facebook"></i>
                                                     </a>
                                                 </li>
                                                 <li>
@@ -467,12 +475,12 @@
                                                 </li>
                                                 <li>
                                                     <a href="http://plus.google.com/discover" target="_blank" rel="noopener">
-                                                        <i class="fab fa-google-plus-g"></i>
+                                                        <i class="fab fa-instagram"></i>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="http://dribbble.com/" target="_blank" rel="noopener">
-                                                        <i class="fab fa-dribbble"></i>
+                                                        <i class="fab fa-youtube"></i>
                                                     </a>
                                                 </li>
                                             </ul>
