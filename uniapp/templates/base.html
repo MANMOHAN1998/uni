@@ -58,7 +58,7 @@
 
     <!-- Responsive styling -->
     <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
-
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body class="test-class">
@@ -87,7 +87,7 @@
                         </a>
                         <div class="custom-dropdown-menu">
                             <a class="dropdown-item" href="/qa-services">QA Services</a>
-                            <a class="dropdown-item" href="/website-development">Website Design</a>
+                            <a class="dropdown-item" href="/website-development">Website Development</a>
                             <a class="dropdown-item" href="/publishing">Publishing and Conversion Services</a>
                             <a class="dropdown-item" href="/seo">Search Engine Optimization</a>
                             <a class="dropdown-item" href="/recruitment">Recruitment Process</a>
@@ -113,7 +113,7 @@
                         <a class="nav-link" href="blog.html">Blog</a>
                     </li>-->
                     <li class="nav-item">
-                        <a class="nav-link custom-btn btn-mid grad-style-cd" href="/contact" data-bs-toggle="modal" data-bs-target="#get-a-quote-modal">CONTACT US</a>
+                        <a class="nav-link custom-btn btn-mid grad-style-cd" href="" data-bs-toggle="modal" data-bs-target="#get-a-quote-modal">CONTACT US</a>
                     </li>
                 </ul>
                 <!-- End of .navbar-nav -->
@@ -205,22 +205,22 @@
                             <h5>Services</h5>
                             <ul class="footer-menu">
                                 <li>
-                                    <a href="logo-and-branding.html">QA Services</a>
+                                    <a href="/qa-services">QA Services</a>
                                 </li>
                                 <li>
-                                    <a href="pay-per-click.html">Website Development</a>
+                                    <a href="/website-development">Website Development</a>
                                 </li>
                                 <li>
-                                    <a href="website-design.html">Publishing and Conversion Services</a>
+                                    <a href="/publishing">Publishing and Conversion Services</a>
                                 </li>
                                 <li>
-                                    <a href="mobile-app-development.html">Timecodes Generation, Translation</a>
+                                    <a href="/timecodes-translation">Timecodes Generation, Translation</a>
                                 </li>
                                 <li>
-                                    <a href="search-engine-optimization.html">Search Engine Optimization </a>
+                                    <a href="/seo">Search Engine Optimization</a>
                                 </li>
                                 <li>
-                                    <a href="social-media-marketing.html">Recruitment Process</a>
+                                    <a href="/recruitment">Recruitment Process</a>
                                 </li>
                             </ul>
                         </nav>
@@ -232,7 +232,7 @@
                             <h5>Support</h5>
                             <ul class="footer-menu">
                                 <li>
-                                    <a href="contact.html">Contact</a>
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#get-a-quote-modal">Contact</a>
                                 </li>
                                 <li>
                                     <a href="privacy-policy.html">Privacy Policy</a>
@@ -420,6 +420,7 @@
                                                     <div class="col-md-12">
                                                         <textarea name="message" placeholder="Message"></textarea>
                                                     </div>
+                                                    <div class="g-recaptcha" data-sitekey="6LfIMHMpAAAAADntwKW5w9DsB-Mdz_7S5Dy9AHVv"></div>
                                                     <div class="btn-wrapper">
                                                         <button type="submit" class="custom-btn btn-big grad-style-ef">CONTACT US NOW</button>
                                                     </div>
