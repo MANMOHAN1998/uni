@@ -8,5 +8,6 @@ urlpatterns = [
     path('timecodes-translation',timecodes_translation),
     path('publishing',publishing),
     path('website-development',web_dev),
-    path('qa-services',qa_services)
+    path('qa-services',qa_services),
+    path('save_contact_details', save_contact_details),
 ]

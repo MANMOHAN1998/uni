@@ -59,9 +59,65 @@
     <!-- Responsive styling -->
     <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <style>
+        #notification-container {
+          position: fixed;
+          top: 20px;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 1000;
+        }
+        
+        .notification {
+          padding: 10px;
+          margin-bottom: 10px;
+          border-radius: 10px;
+          border: 2px solid;
+          max-width: 300px;
+          margin: 0 auto; /* Center the notification horizontally */
+        }
+        
+        .success {
+          background-color: #4caf50;
+          color: #fff;
+        }
+        
+        .warning {
+          background-color: #f44336;
+          color: #fff;
+        }
+        
+      </style>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var notifications = document.querySelectorAll('.notification');
+        
+          notifications.forEach(function(notification) {
+            setTimeout(function() {
+              notification.style.opacity = '0';
+              setTimeout(function() {
+                notification.style.display = 'none';
+              }, 600);
+            }, 10000);
+          });
+        });
+        
+      </script> 
+
 </head>
 
 <body class="test-class">
+
+    {% if messages %}
+    <div id="notification-container">
+      {% for message in messages %}
+        <div class="notification{% if message.tags %} {{ message.tags }}{% endif %}">
+          <p class="p-0 m-0">{{ message }}</p>
+        </div>
+      {% endfor %}
+    </div>
+    {% endif %}
 
     <!-- navbar starts
     ======================================= -->
@@ -399,7 +455,8 @@
                                     <div class="contact-wrapper contact-page-form-wrapper">
                                         <div class="form-wrapper">
                                             <h3>Send Us a Message</h3>
-                                            <form class="contact-form" method="post">
+                                            <form class="contact-form" method="post" action="/save_contact_details">
+                                                {% csrf_token %}
                                                 <div class="row">
                                                     <div class="col-md-12 col-lg-6">
                                                         <input type="text" name="fname" placeholder="Full Name">
@@ -414,7 +471,7 @@
                                                     </div>
 
                                                     <div class="col-md-12 col-lg-6">
-                                                        <input type="text" name="website" placeholder="Website">
+                                                        <input type="text" name="subject" placeholder="Subject">
                                                     </div>
 
                                                     <div class="col-md-12">
