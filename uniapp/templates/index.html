@@ -143,37 +143,35 @@
             />
         </svg>
         <div class="video-play-bg grad-style-cd">
-            <a href="https://www.youtube.com/watch?v=1iIZeIy7TqM" class="video-play-btn video-popup">
+            {% comment %} <a href="https://www.youtube.com/watch?v=1iIZeIy7TqM" class="video-play-btn video-popup">
                 <i class="fas fa-play"></i>
-            </a>
+            </a> {% endcomment %}
         </div>
         <!-- End of .video-play-bg -->
         <div class="container">
             <div class="row">
                 <div class="col-md-6 ml-auto">
-                    <h2>We Lead from the Front</h2>
-                    <p>Aenean consectetur massa quis sem volutpat, a condimentum tortor pretium. Cras id ligula consequat, sagittis
-                        nulla at, sollicitudin lorem. Orci varius natoque penatibus et magnis dis parturient montes.</p>
-                    <p>Cras id ligula consequat, sagittis nulla at, sollicitudin lorem. Orci varius natoque penatibus et magnis
-                        dis parturient montes, nascetur ridiculus mus. Phasellus eleifend, dolor vel condimentum imperdiet.</p>
+                    <h2>Our Vision at <a href="/" style="text-decoration: none; font-weight: bold;">UNI Dream Soulutions</a></h2>
+                    <p>At <span style="text-decoration: none; font-weight: bold;">UNI Dream Soulutions</span>, our mission is to be the trusted partner of educational institutions in their journey towards academic excellence. We are committed to providing innovative, scalable, and cost-effective solutions that address the challenges faced by educators and administrators alike.</p> 
+                    <p>With a focus on leveraging technology to drive efficiency, engagement, and student success, we strive to empower educational institutions to achieve their goals and fulfill their mission of providing quality education to all.</p>
                     <div class="counter-wrapper d-flex justify-content-between">
                         <div class="inner-block">
                             <div class="counter-block d-block txt-grad-ef">
-                                <span class="counter">450</span>+
+                                <span class="counter">400</span>+
                             </div>
                             HAPPY
                             <br>CLIENTS
                         </div>
                         <div class="inner-block">
                             <div class="counter-block d-block txt-grad-ab">
-                                <span class="counter">2500</span>+
+                                <span class="counter">200</span>+
                             </div>
                             PROJECTS
                             <br>COMPLETED
                         </div>
                         <div class="inner-block">
                             <div class="counter-block d-block txt-grad-cd">
-                                <span class="counter">4510</span>+
+                                <span class="counter">100</span>+
                             </div>
                             RUNNING
                             <br>PROJECTS
@@ -512,17 +510,18 @@
             <h3 class="text-center">Sign up for our newsletter to stay up to
                 <br>date with tech news!</h3>
 
-            <form action="#" class="newsletter-form" method="POST">
+            <form action="/save-newsletter-subscriber" class="newsletter-form" method="POST">
+                {% csrf_token %}
                 <div class="row justify-content-between">
                     <div class="col-md">
                         <input type="text" name="fname" placeholder="Your Name">
                     </div>
                     <div class="col-md">
-                        <input type="text" name="email" placeholder="Your Email Address">
+                        <input type="email" name="email" placeholder="Your Email Address">
                     </div>
 
                     <div class="col-md-auto">
-                        <a href="" class="custom-btn btn-big grad-style-ef">SIGN UP FOR FREE</a>
+                        <button type="submit" class="custom-btn btn-big grad-style-ef">SIGN UP FOR FREE</button>
                     </div>
                 </div>
                 <!-- End of .row -->

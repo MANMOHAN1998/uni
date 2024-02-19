@@ -56,3 +56,17 @@ def save_contact_details(request):
         else:
             messages.warning(request, 'please try again!!')
     return redirect('/')
+
+
+def save_newsletter_subscriber(request):
+    if request.method == 'POST':
+        try:
+            print(request.POST)
+            name  = request.POST.get('fname')
+            email  = request.POST.get('email')
+            NewsLetterSubscribers.objects.create(name=name,email=email)
+            messages.success(request, 'subscribed!!')
+            return redirect('/')
+        except:
+            messages.warning(request, 'please try again!!')
+    return redirect('/')

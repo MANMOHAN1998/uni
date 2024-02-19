@@ -10,3 +10,10 @@ class ContactedUser(models.Model):
     def __str__(self):
         return self.name
 
+
+class NewsLetterSubscribers(models.Model):
+    name = models.CharField(max_length=30)
+    email = models.EmailField()
+
+    def __str__(self):
+        return self.name
