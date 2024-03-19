@@ -23,11 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-hzv(dv^=+tszbm7--n_e0n*ak%m=%$5j4k^=f6_%3-46$7#jfo'
 
-RECAPTCHA_KEY = '6LfIMHMpAAAAAFOxZNdxGE5JJljwxL6KJyLCbLV0'
+RECAPTCHA_KEY = '6Leyz3spAAAAAF8Kl0yYFxkvB_oRh_dWV8QK_MFk'
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://unidreamsolutions.com']
 
 
 # Application definition
