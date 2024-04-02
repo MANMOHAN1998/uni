@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block tittle %}
+    <title>UNI Dream Solutions - QA</title>
+{% endblock tittle %}
+
+
+{% block body %}
+<section class="section-padding" style="margin-top:5rem">
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Welcome to UniDreamSolutions Quality Analysis Services</h1>
+        <p>At UniDreamSolutions, we take pride in offering top-notch Quality Analysis (QA) services for websites and eBooks. With our dedicated team of QA professionals and cutting-edge tools, we ensure that your digital products meet the highest standards of quality and performance.</p>
+        <h2 class="mt-5">Why choose UniDreamSolutions for your QA needs?</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="qa-step" data-step="1">
+                        <h4><strong>Expertise</strong></h4>
+                        <p>Our team comprises experienced QA engineers who are experts in identifying and rectifying software defects.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="qa-step" data-step="2">
+                        <h4><strong>Comprehensive Testing</strong></h4>
+                        <p>We conduct thorough testing across various platforms, devices, and browsers to ensure compatibility and seamless user experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="qa-step" data-step="3">
+                        <h4><strong>Attention to Detail</strong></h4>
+                        <p>We pay meticulous attention to every aspect of your website or eBook, leaving no stone unturned in ensuring perfection.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="qa-step" data-step="4">
+                        <h4><strong>Custom Solutions</strong></h4>
+                        <p>We tailor our QA services to fit your specific requirements, offering flexible and customized solutions to meet your unique needs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="qa-step" data-step="5">
+                        <h4><strong>Timely Delivery</strong></h4>
+                        <p>We understand the importance of deadlines and strive to deliver high-quality results within agreed-upon timelines.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <style>
+            .qa-step {
+                padding: 20px;
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+            .qa-step:hover {
+                background: linear-gradient(45deg, #e9a17b, #ff7cb0);
+                color: white;
+            }
+        </style>
+        
+        
+        <p>With UniDreamSolutions as your QA partner, you can rest assured that your digital products will undergo rigorous testing and scrutiny, resulting in superior quality and enhanced user satisfaction.</p>
+        <p>Ready to elevate the quality of your digital products? <a href="" class="custom-btn btn-mid grad-style-cd" data-bs-toggle="modal" data-bs-target="#get-a-quote-modal">Contact us</a> today to discuss your QA needs!</p>
+    </div>
+</section>
+{% endblock body %}

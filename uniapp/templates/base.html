@@ -22,8 +22,9 @@
 
     <!-- Page Title
     ======================================== -->
-    <title>UNI || UNI Dream Solutions</title>
-
+    {% block tittle %}
+    
+    {% endblock tittle %}
     <!-- links for favicon
     ======================================== -->
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
@@ -153,7 +154,7 @@
 
     <!-- navbar starts
     ======================================= -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg bg-light">
         <div class="container">
             <a class="navbar-brand" href="/" style="width:30%">
                 <img src="{% static 'images/brand-logo.png' %}" alt="Brand Logo" class="img-fluid">

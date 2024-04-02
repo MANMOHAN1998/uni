@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
+# SECURITY WARNING: keep the secret key used in production secret!my    
 SECRET_KEY = 'django-insecure-hzv(dv^=+tszbm7--n_e0n*ak%m=%$5j4k^=f6_%3-46$7#jfo'
 
 RECAPTCHA_KEY = '6Leyz3spAAAAAF8Kl0yYFxkvB_oRh_dWV8QK_MFk'

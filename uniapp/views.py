@@ -11,7 +11,7 @@ def home(request):
     return render(request, 'index.html')
 
 def qa_services(request):
-    return render(request, 'index.html')
+    return render(request, 'qa-servies.html')
 
 def web_dev(request):
     return render(request, 'index.html')
