@@ -9,47 +9,54 @@
 {% block body %}
 <section class="section-padding" style="margin-top:5rem">
     <div class="container my-5">
-        <h1 class="text-center mb-4">Welcome to UniDreamSolutions Quality Analysis Services</h1>
-        <p>At UniDreamSolutions, we take pride in offering top-notch Quality Analysis (QA) services for websites and eBooks. With our dedicated team of QA professionals and cutting-edge tools, we ensure that your digital products meet the highest standards of quality and performance.</p>
-        <h2 class="mt-5">Why choose UniDreamSolutions for your QA needs?</h2>
+        <h1 class="text-center mb-4">Welcome to UNI DreamSolutions Quality Analysis Services</h1>
+        <p>At UNI DreamSolutions, we take pride in offering top-notch Quality Analysis (QA) services for websites and eBooks. With our dedicated team of QA professionals and cutting-edge tools, we ensure that your digital products meet the highest standards of quality and performance.</p>
+        <h2 class="mt-5">Why choose UNI DreamSolutions for your QA needs?</h2>
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="qa-step" data-step="1">
-                        <h4><strong>Expertise</strong></h4>
-                        <p>Our team comprises experienced QA engineers who are experts in identifying and rectifying software defects.</p>
+                        <h4 class="card-title"><strong>Expertise</strong></h4>
+                        <p class="card-text">Our team comprises experienced QA engineers who are experts in identifying and rectifying software defects.</p>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="qa-step" data-step="2">
-                        <h4><strong>Comprehensive Testing</strong></h4>
-                        <p>We conduct thorough testing across various platforms, devices, and browsers to ensure compatibility and seamless user experience.</p>
+                        <h4 class="card-title"><strong>Comprehensive Testing</strong></h4>
+                        <p class="card-text">We conduct thorough testing across various platforms, devices, and browsers to ensure compatibility and seamless user experience.</p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
                     <div class="qa-step" data-step="3">
-                        <h4><strong>Attention to Detail</strong></h4>
-                        <p>We pay meticulous attention to every aspect of your website or eBook, leaving no stone unturned in ensuring perfection.</p>
+                        <h4 class="card-title"><strong>Attention to Detail</strong></h4>
+                        <p class="card-text">We pay meticulous attention to every aspect of your website or eBook, leaving no stone unturned in ensuring perfection.</p>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="qa-step" data-step="4">
-                        <h4><strong>Custom Solutions</strong></h4>
-                        <p>We tailor our QA services to fit your specific requirements, offering flexible and customized solutions to meet your unique needs.</p>
+                        <h4 class="card-title"><strong>Custom Solutions</strong></h4>
+                        <p class="card-text">We tailor our QA services to fit your specific requirements, offering flexible and customized solutions to meet your unique needs.</p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
                     <div class="qa-step" data-step="5">
-                        <h4><strong>Timely Delivery</strong></h4>
-                        <p>We understand the importance of deadlines and strive to deliver high-quality results within agreed-upon timelines.</p>
+                        <h4 class="card-title"><strong>Timely Delivery</strong></h4>
+                        <p class="card-text">We understand the importance of deadlines and strive to deliver high-quality results within agreed-upon timelines.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="qa-step" data-step="6">
+                        <h4 class="card-title"><strong>Exceptional Customer Service</strong></h4>
+                        <p class="card-text">We are committed to providing exceptional customer service throughout your journey with us. Our dedicated team ensures prompt responses, clear communication, and personalized support to meet your needs and exceed your expectations.We are committed to providing exceptional customer service throughout your journey with us. Our dedicated team ensures prompt responses, clear communication, and personalized support to meet your needs and exceed your expectations.</p>
                     </div>
                 </div>
             </div>
         </div>
+        
         
         <style>
             .qa-step {
@@ -59,16 +66,41 @@
                 border-radius: 5px;
                 cursor: pointer;
                 transition: background-color 0.3s ease;
+                height: 200px;
+                overflow-y: auto;
             }
             .qa-step:hover {
                 background: linear-gradient(45deg, #e9a17b, #ff7cb0);
                 color: white;
             }
+            .qa-step::-webkit-scrollbar {
+                width: 10px;
+            }
+            .qa-step::-webkit-scrollbar-thumb {
+                background: linear-gradient(45deg, #e9a17b, #ff7cb0); /* Make the scrollbar thumb color same as background */
+            }
+            .qa-step::before {
+                content: " ";
+                width: 100%;
+                height: 100%;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: #fff;
+                border-radius: 10px;
+                box-shadow: 0 10px 50px rgba(166, 209, 237, 0.2);
+                z-index: -2;
+            }
+            .qa-step:hover .card-title,
+            .qa-step:hover .card-text {
+                color: #fff;
+            }
         </style>
         
         
-        <p>With UniDreamSolutions as your QA partner, you can rest assured that your digital products will undergo rigorous testing and scrutiny, resulting in superior quality and enhanced user satisfaction.</p>
-        <p>Ready to elevate the quality of your digital products? <a href="" class="custom-btn btn-mid grad-style-cd" data-bs-toggle="modal" data-bs-target="#get-a-quote-modal">Contact us</a> today to discuss your QA needs!</p>
+        <p>With UNI DreamSolutions as your QA partner, you can rest assured that your digital products will undergo rigorous testing and scrutiny, resulting in superior quality and enhanced user satisfaction.</p>
+        <p>Ready to elevate the quality of your digital products? <a href="" data-bs-toggle="modal" data-bs-target="#get-a-quote-modal">Contact us</a> today to discuss your QA needs!</p>
     </div>
 </section>
 {% endblock body %}

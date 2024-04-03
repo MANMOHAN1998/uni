@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block tittle %}
+    <title>UNI Dream Solutions - Website Development Services</title>
+{% endblock tittle %}
+
+{% block body %}
+<section class="section-padding" style="margin-top:5rem">
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Welcome to UNI DreamSolutions Website Development Services</h1>
+        <p>At UNI DreamSolutions, we specialize in creating tailored websites and web applications to meet your unique needs. Our team of expert developers is proficient in delivering both static and dynamic websites, ensuring a seamless online experience for your users.</p>
+        <h2 class="mt-5">Why Choose UNI DreamSolutions for Your Website Development?</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card qa-step" data-step="1">
+                        <div class="card-body">
+                            <h4 class="card-title"><strong>Expertise</strong></h4>
+                            <p class="card-text">Our team possesses extensive experience in developing interactive web applications. From simple websites to complex web apps, we have the skills and expertise to bring your ideas to life.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card qa-step" data-step="2">
+                        <div class="card-body">
+                            <h4 class="card-title"><strong>Custom Solutions</strong></h4>
+                            <p class="card-text">We understand that every project is unique. Our development approach is tailored to your specific requirements and business objectives.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card qa-step" data-step="3">
+                        <div class="card-body">
+                            <h4 class="card-title"><strong>Scalability</strong></h4>
+                            <p class="card-text">Our solutions are designed to grow with your business. Whether you need a basic website or a robust web application, we ensure scalability to meet your evolving needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card qa-step" data-step="4">
+                        <div class="card-body">
+                            <h4 class="card-title"><strong>Responsive Design</strong></h4>
+                            <p class="card-text">We prioritize responsive design to ensure your website or application looks great and functions flawlessly across all devices and screen sizes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card qa-step" data-step="5">
+                        <div class="card-body">
+                            <h4 class="card-title"><strong>Technologies</strong></h4>
+                            <p class="card-text">Our tech stack includes <strong>Python (Django framework)</strong>, <strong>React.js</strong>, <strong>JavaScript</strong>, <strong>HTML5</strong>, and <strong>CSS3</strong>, enabling us to deliver modern and efficient solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card qa-step" data-step="6">
+                        <div class="card-body">
+                            <h4 class="card-title"><strong>Timely Delivery</strong></h4>
+                            <p class="card-text">We value your time and strive to deliver projects within agreed-upon timelines without compromising on quality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <style>
+            .qa-step {
+                margin-bottom: 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                height: 200px;
+                overflow-y: auto;
+            }
+            .qa-step:hover {
+                background: linear-gradient(45deg, #e9a17b, #ff7cb0);
+
+            }
+            .qa-step:hover .card-title,
+            .qa-step:hover .card-text {
+                color: #fff;
+            }
+        </style>
+        
+        <p>With UNI DreamSolutions as your website development partner, you can elevate your online presence and achieve your business goals effectively.</p>
+        <p>Ready to bring your vision to life? <a href="" data-bs-toggle="modal" data-bs-target="#get-a-quote-modal">Contact us</a> today to discuss your development needs!</p>
+    </div>
+</section>
+{% endblock body %}

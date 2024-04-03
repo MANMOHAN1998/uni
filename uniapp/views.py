@@ -14,7 +14,7 @@ def qa_services(request):
     return render(request, 'qa-servies.html')
 
 def web_dev(request):
-    return render(request, 'index.html')
+    return render(request, 'web-dev.html')
 
 def publishing(request):
     return render(request, 'index.html')
