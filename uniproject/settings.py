@@ -27,7 +27,7 @@ RECAPTCHA_KEY = '6Leyz3spAAAAAF8Kl0yYFxkvB_oRh_dWV8QK_MFk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://unidreamsolutions.com']
+ALLOWED_HOSTS = ['https://unidreamsolutions.com','*']
 
 
 # Application definition

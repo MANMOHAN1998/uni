@@ -10,10 +10,10 @@
     <div class="container my-5">
         <h1 class="text-center mb-4">Welcome to UNI DreamSolutions Website Development Services</h1>
         <p>At UNI DreamSolutions, we specialize in creating tailored websites and web applications to meet your unique needs. Our team of expert developers is proficient in delivering both static and dynamic websites, ensuring a seamless online experience for your users.</p>
-        <h2 class="mt-5">Why Choose UNI DreamSolutions for Your Website Development?</h2>
+        <h2 class="text-center mt-5">Why Choose UNI DreamSolutions for Your Website Development?</h2>
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 shadow-sm">
                     <div class="card qa-step" data-step="1">
                         <div class="card-body">
                             <h4 class="card-title"><strong>Expertise</strong></h4>
@@ -76,14 +76,25 @@
                 transition: background-color 0.3s ease;
                 height: 200px;
                 overflow-y: auto;
+                background: linear-gradient(45deg, #e9a17b, #ff7cb0);
             }
             .qa-step:hover {
-                background: linear-gradient(45deg, #e9a17b, #ff7cb0);
+                background: #fff
 
+            }
+            .qa-step .card-title,
+            .qa-step .card-text {
+                color: #fff;
             }
             .qa-step:hover .card-title,
             .qa-step:hover .card-text {
-                color: #fff;
+                color: #000;
+            }
+            .container h1 {
+                font-size:45px;
+            }
+            .container h2 {
+                font-size:35px;
             }
         </style>
         
