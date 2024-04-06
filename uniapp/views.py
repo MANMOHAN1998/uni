@@ -17,7 +17,7 @@ def web_dev(request):
     return render(request, 'web-dev.html')
 
 def publishing(request):
-    return render(request, 'index.html')
+    return render(request, 'publish-conversion.html')
 
 def seo(request):
     return render(request, 'index.html')
