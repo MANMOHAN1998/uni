@@ -1584,9 +1584,9 @@ textarea:focus {
   padding: 15px;
   box-shadow: 0 0 10px rgba(166, 209, 237, 0.3);
 }
-.navbar.scrolled .navbar-brand img {
+/* .navbar.scrolled .navbar-brand img {
   width: 100%;
-}
+} */
 .navbar.scrolled .navbar-nav .custom-dropdown-menu {
   top: 125%;
 }
@@ -3237,7 +3237,7 @@ h1 {
 }
 
 .footer-logo img {
-  max-width: 25rem;
+  max-width: 90%;
 }
 
 /* -- Browser Hacks

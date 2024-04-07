@@ -20,7 +20,7 @@ def publishing(request):
     return render(request, 'publish-conversion.html')
 
 def seo(request):
-    return render(request, 'index.html')
+    return render(request, 'seo.html')
 
 def recruitment(request):
     return render(request, 'index.html')
