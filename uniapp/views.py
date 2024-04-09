@@ -23,7 +23,7 @@ def seo(request):
     return render(request, 'seo.html')
 
 def recruitment(request):
-    return render(request, 'index.html')
+    return render(request, 'recritement.html')
 
 def timecodes_translation(request):
     return render(request, 'index.html')

@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block tittle %}
+    <title>UNI Dream Solutions - Recruitment Process</title>
+{% endblock tittle %}
+
+{% block body %}
+
+<section class="section-padding" style="margin-top:5rem">
+    <div class="container my-5">
+        <h1 class="text-center mb-4">UNI Dream Solutions Recruitment Process</h1>
+        <p>At UNI Dream Solutions, we specialize in every type of recruitment, with a particular focus on tech jobs in the Indian market. Our recruitment process is tailored to identify and attract top talent that meets the unique requirements of our clients.</p>
+        <h2 class="text-center mt-5">Why Choose Our Recruitment Services?</h2>
+        <div class="container">
+            <!-- Service Offerings -->
+            <div class="row">
+                <!-- Customized Recruitment Solutions -->
+                <div class="col-md-6">
+                    <div class="qa-step" data-step="1">
+                        <h4 class="card-title"><strong>Customized Recruitment Solutions</strong></h4>
+                        <p class="card-text">We offer customized recruitment solutions tailored to the specific needs of our clients. Whether you're looking for permanent hires, contract workers, or temporary staff, we have the expertise to find the right fit for your organization.</p>
+                    </div>
+                </div>
+                <!-- Tech Job Specialists -->
+                <div class="col-md-6">
+                    <div class="qa-step" data-step="2">
+                        <h4 class="card-title"><strong>Tech Job Specialists</strong></h4>
+                        <p class="card-text">With our deep understanding of the Indian tech market, we specialize in recruiting for various tech roles. Whether it's software development, IT infrastructure, data science, or cybersecurity, we can help you find top talent in the industry.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Streamlined Hiring Process -->
+                <div class="col-md-6">
+                    <div class="qa-step" data-step="3">
+                        <h4 class="card-title"><strong>Streamlined Hiring Process</strong></h4>
+                        <p class="card-text">Our recruitment process is streamlined and efficient, saving you time and resources. We leverage the latest technologies and methodologies to identify, screen, and onboard candidates quickly and effectively.</p>
+                    </div>
+                </div>
+                <!-- Extensive Talent Network -->
+                <div class="col-md-6">
+                    <div class="qa-step" data-step="4">
+                        <h4 class="card-title"><strong>Extensive Talent Network</strong></h4>
+                        <p class="card-text">With our extensive talent network and industry connections, we have access to a diverse pool of qualified candidates. Whether you need entry-level professionals or seasoned experts, we can connect you with the right talent.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Dedicated Support -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="qa-step" data-step="5">
+                        <h4 class="card-title"><strong>Dedicated Support</strong></h4>
+                        <p class="card-text">We provide dedicated support throughout the recruitment process, from initial consultation to final placement. Our team of experts is committed to delivering exceptional service and helping you achieve your hiring goals.</p>
+                    </div>
+                </div>
+                <!-- Industry Expertise -->
+                <div class="col-md-6">
+                    <div class="qa-step" data-step="6">
+                        <h4 class="card-title"><strong>Industry Expertise</strong></h4>
+                        <p class="card-text">With years of experience in the recruitment industry, we have in-depth knowledge of market trends, salary benchmarks, and candidate preferences. Our industry expertise allows us to offer strategic insights and advice to help you make informed hiring decisions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .qa-step {
+                padding: 20px;
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                height: 200px;
+                overflow-y: auto;
+            }
+            .qa-step:hover {
+                background: linear-gradient(45deg, #e9a17b, #ff7cb0);
+                color: white;
+            }
+            .qa-step::-webkit-scrollbar {
+                width: 10px;
+            }
+            .qa-step::-webkit-scrollbar-thumb {
+                background: linear-gradient(45deg, #e9a17b, #ff7cb0); /* Make the scrollbar thumb color same as background */
+            }
+            .qa-step::before {
+                content: " ";
+                width: 100%;
+                height: 100%;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: #fff;
+                border-radius: 10px;
+                box-shadow: 0 10px 50px rgba(166, 209, 237, 0.2);
+                z-index: -2;
+            }
+            .qa-step:hover .card-title,
+            .qa-step:hover .card-text {
+                color: #fff;
+            }
+            .container h1 {
+                font-size:45px;
+            }
+            .container h2 {
+                font-size:35px;
+            }
+        </style>
+
+        <p>Partner with UNI Dream Solutions for your recruitment needs and experience a seamless, efficient, and effective hiring process. Let us help you build a high-performing team that drives your organization's success.</p>
+        <p>Ready to elevate your recruitment process? <a href="" data-bs-toggle="modal" data-bs-target="#get-a-quote-modal">Contact us</a> today to get started.</p>
+    </div>
+</section>
+
+
+{% endblock body %}
