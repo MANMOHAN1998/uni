@@ -26,7 +26,7 @@ def recruitment(request):
     return render(request, 'recritement.html')
 
 def timecodes_translation(request):
-    return render(request, 'index.html')
+    return render(request, 'timecode.html')
 
 def about(request):
     return render(request, 'about-us.html')
