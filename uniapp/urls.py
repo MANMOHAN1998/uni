@@ -11,4 +11,5 @@ urlpatterns = [
     path('qa-services',qa_services),
     path('save_contact_details', save_contact_details),
     path('save-newsletter-subscriber',save_newsletter_subscriber),
+    path('privacy-policy',privacy_policy),
 ]

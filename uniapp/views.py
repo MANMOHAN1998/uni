@@ -31,6 +31,9 @@ def timecodes_translation(request):
 def about(request):
     return render(request, 'about-us.html')
 
+def privacy_policy(request):
+    return render(request, 'privacy-policy.html')
+
 def save_contact_details(request):
     if request.method == 'POST':
         print(request.POST)
